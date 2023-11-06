@@ -1,0 +1,10 @@
+nodemon index.ts
+npx prisma generate --schema src/db/prisma\schema.prisma
+npx prisma migrate dev --schema src/db/prisma\schema.prisma
+npx prisma migrate reset --schema src/db/prisma\schema.prisma
+
+npm i --save-dev @types/node
+npm install pg
+
+
+psql -U ian -d nodejsActivity
